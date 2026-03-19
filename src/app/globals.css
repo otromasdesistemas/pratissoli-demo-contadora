@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:          #F7F6F3;
+  --bg-2:        #EEECEA;
+  --bg-dark:     #1C2B3A;
+  --accent:      #2563EB;
+  --accent-light:#EFF6FF;
+  --gold:        #B08D57;
+  --text:        #1A1A2E;
+  --text-muted:  #6B7280;
+  --border:      #E5E3DF;
+  --white:       #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .font-playfair {
+    font-family: var(--font-playfair), Georgia, serif;
+  }
+  .font-inter {
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+}
