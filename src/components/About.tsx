@@ -40,7 +40,7 @@ export default function About() {
               style={{ backgroundColor: "var(--bg-2)" }}
             >
               <Image
-                src="/images/perfil-contadora.jpg"
+                src="/images/perfil-contadora-nuevo.png"
                 alt="Cra. Sofía Marchetti — Contadora Pública"
                 fill
                 className="object-cover object-top"
