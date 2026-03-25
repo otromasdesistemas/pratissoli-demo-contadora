@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { GraduationCap, BadgeCheck, Clock } from "lucide-react";
+import Image from "next/image";
 
 const credentials = [
   { icon: GraduationCap, text: "Licenciada en Contabilidad — UBA, Facultad de Ciencias Económicas" },
@@ -38,25 +39,18 @@ export default function About() {
               className="relative z-10 rounded-[12px] overflow-hidden aspect-[3/4] w-full max-w-[420px] mx-auto lg:mx-0"
               style={{ backgroundColor: "var(--bg-2)" }}
             >
-              {/* Placeholder image with initials */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                <div
-                  className="w-24 h-24 rounded-full flex items-center justify-center font-playfair font-medium text-[32px] text-white"
-                  style={{ backgroundColor: "var(--accent)" }}
-                >
-                  SM
-                </div>
-                <p
-                  className="font-inter font-light text-[13px]"
-                  style={{ color: "var(--text-muted)" }}
-                >
-                  Foto profesional
-                </p>
-              </div>
+              <Image
+                src="/images/perfil-contadora.jpg"
+                alt="Cra. Sofía Marchetti — Contadora Pública"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 768px) 100vw, 420px"
+                priority
+              />
 
               {/* Subtle gradient overlay at bottom */}
               <div
-                className="absolute bottom-0 left-0 right-0 h-32"
+                className="absolute bottom-0 left-0 right-0 h-32 z-10"
                 style={{
                   background:
                     "linear-gradient(to top, rgba(238,236,234,0.6) 0%, transparent 100%)",
